@@ -1,0 +1,46 @@
+ticket_id,text,category
+1,"I was charged twice for my monthly subscription",billing
+2,"Please refund the duplicate payment on my account",billing
+3,"My invoice total does not match the plan price",billing
+4,"I need to update the credit card used for billing",billing
+5,"The renewal charge appeared before my billing date",billing
+6,"Can you explain this unexpected charge on my statement",billing
+7,"I cannot sign in after resetting my password",access
+8,"My account says the password is incorrect",access
+9,"I am locked out after too many login attempts",access
+10,"The sign in page does not accept my verification code",access
+11,"Please help me restore access to my account",access
+12,"I cannot log in from my new phone",access
+13,"The application crashes when I open the reports page",bug
+14,"Saving my profile displays an error message",bug
+15,"The dashboard is blank after the latest update",bug
+16,"Search results disappear when I change pages",bug
+17,"The export button downloads an empty file",bug
+18,"I found a bug that prevents the settings page from loading",bug
+19,"A second subscription payment was taken from my card",billing
+20,"My payment receipt shows the wrong amount",billing
+21,"How do I change the card for future subscription payments",billing
+22,"The password reset link expired before I could use it",access
+23,"Two factor authentication is blocking my sign in",access
+24,"I cannot access my account even though my password is correct",access
+25,"The app freezes whenever I try to open a report",bug
+26,"Clicking save causes the profile form to fail",bug
+27,"The latest release broke the dashboard charts",bug
+28,"The billing page shows a duplicate charge",billing
+29,"I have a problem with my payment and invoice",billing
+30,"Please help with a subscription charge on my bill",billing
+31,"My card was charged for the subscription twice",billing
+32,"The invoice has an incorrect payment amount",billing
+33,"I need help with a refund for a billing error",billing
+34,"I have a login problem and cannot access my account",access
+35,"My account sign in fails with the right password",access
+36,"Help me reset my password to log in",access
+37,"I cannot access the service because login is failing",access
+38,"My verification code login does not work",access
+39,"Please unlock my account so I can sign in",access
+40,"The application has an error when loading the dashboard",bug
+41,"A bug makes the report page crash",bug
+42,"The application does not save my settings",bug
+43,"The dashboard page fails to load correctly",bug
+44,"An error appears when exporting the report",bug
+45,"The latest update caused a problem in the app",bug

@@ -1,0 +1,202 @@
+PYTHON LIBRARIES REFERENCE
+=========================
+
+This reference covers the Python standard-library modules and third-party
+packages imported by the repository's Python examples, plus packages declared
+in dependency manifests. Most examples are independent; install only the
+packages needed for the example you want to run. The AI Foundations examples
+share dependencies listed in "AI Foundations/requirements.txt"; its test
+dependencies are in "AI Foundations/requirements-dev.txt".
+
+STANDARD LIBRARY
+----------------
+
+argparse       Builds command-line interfaces and parses command-line options.
+asyncio        Provides asynchronous programming primitives and event loops.
+csv            Reads and writes comma-separated value files.
+datetime       Creates, parses, and performs calculations with dates and times.
+email          Builds email messages and MIME message content.
+getpass        Reads sensitive input, such as passwords, without echoing it.
+hashlib        Computes cryptographic hashes and message digests.
+io             Provides in-memory streams and file-like objects.
+json           Encodes and decodes JSON data.
+logging        Emits configurable application logs.
+math           Provides common mathematical functions.
+multiprocessing Runs work in separate processes and provides process coordination.
+os             Interacts with operating-system features and environment variables.
+pathlib        Represents and manipulates filesystem paths.
+platform       Reports information about the operating system and runtime.
+random         Generates pseudo-random values.
+re             Searches, validates, splits, and replaces text with regular expressions.
+shutil         Copies, moves, and removes files and directories.
+smtplib        Sends email through SMTP servers.
+string         Provides string constants and common text helpers.
+subprocess     Starts and controls external programs and shell commands.
+sys            Exposes interpreter and process information.
+time           Reads clocks and adds delays or time-based measurements.
+unittest       Provides the standard testing framework and mock utilities.
+urllib         Makes HTTP requests and works with URLs and URL errors.
+xml            Parses and generates XML documents.
+zipfile        Reads and writes ZIP archives.
+
+THIRD-PARTY PACKAGES
+--------------------
+
+Package / import name                         What it does
+--------------------------------------------  ------------------------------
+Ansible (ansible)                             Provides automation modules and
+                                               system-configuration helpers.
+
+argcomplete                                   Adds shell tab completion to
+                                               argparse command-line tools.
+
+Azure SDKs (azure.*)                          Authenticates with Azure and
+                                               manages virtual machines and
+                                               Blob Storage.
+
+Beautiful Soup (bs4)                          Parses HTML and extracts data
+                                               from web pages.
+
+Behave                                        Runs behavior-driven tests
+                                               written in Gherkin.
+
+Boto3 and Botocore                            AWS SDK for Python; Botocore
+                                               provides shared AWS API details
+                                               and exceptions.
+
+Chalice                                       Builds and deploys serverless
+                                               Python applications on AWS.
+
+Click                                         Builds command-line interfaces.
+
+Cryptography                                  Provides encryption and other
+                                               cryptographic primitives.
+
+Dash, dash_core_components,                   Builds interactive dashboards
+dash_html_components                          and web interfaces for data apps.
+
+etcd3                                         Connects to etcd key-value
+                                               configuration stores.
+
+FastAPI                                       Builds HTTP APIs with validation
+                                               and automatic API documentation.
+
+Flask                                         Provides a lightweight web
+                                               application framework.
+
+FPDF (fpdf)                                   Creates PDF documents.
+fuzzywuzzy                                    Compares strings using fuzzy
+                                               similarity matching.
+
+Google Cloud client libraries                 Accesses Google Cloud services,
+(google.cloud, google.api_core,                including storage and compute;
+ google.oauth2)                                includes API errors and auth.
+
+InquirerPy                                    Creates interactive terminal
+                                               prompts and menus.
+
+Jira (jira)                                   Reads and manages Jira issues
+                                               through the Jira API.
+
+joblib                                        Saves and loads Python objects
+                                               such as trained ML models.
+
+Kubeflow Pipelines (kfp)                      Defines machine-learning
+                                               workflows and pipelines.
+
+Kubernetes Python client                      Communicates with Kubernetes
+                                               clusters and resources.
+
+Matplotlib                                    Creates plots and charts.
+
+MLflow                                        Tracks machine-learning
+                                               experiments and models.
+
+NumPy                                         Provides fast arrays and
+                                               numerical operations.
+
+OpenPyXL                                      Reads, writes, and styles Excel
+                                               workbooks.
+
+OpenTelemetry                                 Instruments applications and
+                                               exports traces, including to
+                                               Jaeger; includes Requests
+                                               instrumentation.
+
+Pandas                                        Loads, transforms, and analyzes
+                                               tabular data.
+
+Panel                                         Builds interactive data
+                                               dashboards and applications.
+
+Paramiko                                      Implements SSH clients and
+                                               remote command execution.
+
+pdfminer.six                                  Extracts text and information
+                                               from PDF files.
+
+Plotly                                        Creates interactive charts.
+prometheus-client (prometheus_client)         Exposes application metrics for
+                                               Prometheus monitoring.
+
+psutil                                        Reads process, CPU, memory, and
+                                               disk statistics.
+
+Pydantic                                      Validates and parses data using
+                                               Python type annotations.
+
+PyHelm                                        Manages Helm charts and releases
+                                               from Python.
+
+PyPDF2                                        Reads and manipulates PDF files.
+
+PyYAML (yaml)                                 Reads and writes YAML data.
+
+pytest                                        Runs automated Python tests.
+
+python-dotenv (dotenv)                        Loads environment variables
+                                               from .env files.
+
+python-terraform (python_terraform)           Runs Terraform operations from
+                                               Python.
+
+Requests                                      Makes HTTP requests to web APIs.
+
+ReportLab                                     Generates PDF documents.
+
+scikit-learn (sklearn)                        Provides machine-learning
+                                               estimators, preprocessing,
+                                               pipelines, and metrics.
+
+Schedule                                      Runs Python jobs on a schedule.
+
+Selenium                                      Automates browsers for web tests.
+
+setuptools (pkg_resources)                   Provides package metadata and
+                                               installed-package utilities.
+
+Streamlit                                     Builds interactive Python data
+                                               applications.
+
+tqdm                                          Displays progress bars.
+
+Uvicorn                                       Runs ASGI web applications such
+                                               as the FastAPI capstone.
+
+VirtualBox Python bindings                    Controls VirtualBox virtual
+                                               machines from Python.
+                                               
+httpx                                         HTTP client used by FastAPI's
+                                               test client; a development
+                                               dependency in this repository.
+
+REPOSITORY-LOCAL MODULES
+------------------------
+
+math_operations.py    Example module imported by other examples in its folder.
+AI Foundations/Final Project/app.py
+                      The local FastAPI application imported by its tests.
+
+Package names above are normalized for readability; import names and package
+names on package indexes sometimes differ (for example, "sklearn" is installed
+as "scikit-learn", and "bs4" as "beautifulsoup4").
